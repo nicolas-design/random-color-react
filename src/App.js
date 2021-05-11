@@ -1,13 +1,10 @@
 import './App.css';
 import { useState } from 'react';
-import logo from './logo.svg';
 
-let randomColor = require('randomcolor');
-let colorR = randomColor();
+const randomColor = require('randomcolor');
+const colorR = randomColor();
 
-const chalk = require('chalk');
-
-function RandomColor(props) {
+function RandomColor() {
   const [hasColor, setHasColor] = useState({ color: colorR });
   const [hasHue, setHasHue] = useState('');
   const [hasLight, setHasLight] = useState('');
